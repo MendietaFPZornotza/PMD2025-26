@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PROIEKTU_DENDA" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="Theme.App.Start" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash</item>
+        <item name="windowSplashScreenAnimationDuration">500</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.PROIEKTU_DENDA</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+    </style>
+
+    <style name="Theme.PROIEKTU_DENDA" parent="Base.Theme.PROIEKTU_DENDA" />
+    <style name="Theme.YourApp.CustomMenu" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+</resources>

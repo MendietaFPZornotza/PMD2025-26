@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#523980"
+    tools:context=".view.SelectionActivity">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="AUKERATU OPZIOA"
+        android:textColor="#FCFBFB"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón Kontsultak -->
+    <Button
+        android:id="@+id/btnKontsultak"
+        android:layout_width="266dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="#673AB7"
+        android:text="Kontsultak"
+        android:textColor="#00BCD4"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitulo" />
+
+    <!-- Botón Gestioa -->
+    <Button
+        android:id="@+id/btnGestioa"
+        android:layout_width="266dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="#673AB7"
+        android:text="Gestioa"
+        android:textColor="#00BCD4"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnKontsultak" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+
+<resources>
+
+<style name="Theme.ErronkaProba" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="colorPrimary">#1F4DB8</item>
+    <item name="colorSecondary">#2E6BFF</item>
+
+
+    <item name="android:statusBarColor">#1F4DB8</item>
+    <item name="android:windowLightStatusBar">false</item>
+
+
+    <item name="android:navigationBarColor">#FFFFFF</item>
+</style>
+
+<style name="Theme.ErronkaProba.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_background</item>
+    <item name="android:windowNoTitle">true</item>
+</style>
+
+</resources>

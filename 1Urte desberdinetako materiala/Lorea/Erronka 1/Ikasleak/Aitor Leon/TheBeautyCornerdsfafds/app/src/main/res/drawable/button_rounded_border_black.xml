@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Produktua gehitzeko pantailaren botoiaren estiloa -->
+    <corners android:radius="16dp"/>
+    <solid android:color="@color/beltza"/>
+    <stroke
+        android:width="2dp"
+        android:color="@color/beltza" />
+</shape>

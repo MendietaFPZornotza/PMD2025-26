@@ -1,0 +1,44 @@
+<resources>
+    <!-- Aplikazioaren izena -->
+    <string name="app_name">The Beauty Corner</string>
+
+    <!-- Login eta erregistratu pantala -->
+    <string name="erab">Erabiltzailea</string>
+    <string name="pass">Pasahitza</string>
+    <string name="Logeatu">Login</string>
+    <string name="erregistratu">Erregistratu</string>
+    <string name="email">Posta Elektronikoa</string>
+    <string name="izena">Izena</string>
+    <string name="emakumea">Emakumea</string>
+    <string name="gizona">Gizona</string>
+    <string name="bestea">Beste Bat</string>
+    <string name="bueltatuLogin">Bueltatu Login-era</string>
+
+    <!-- Sare sozialen eta ikonoen hint-ak eta deskripzioak-->
+    <string name="twitter_desk">Twitter-era joateko erabili ahal da</string>
+    <string name="twitter_hint">Twitter-eko botoi beltza</string>
+    <string name="facebook_desk">Facebook-era joateko erablii ahal da</string>
+    <string name="facebook_hint">Facebook-eko botoi beltza</string>
+    <string name="google_desk">Google-era joateko erabili ahal da</string>
+    <string name="google_hint">Google-eko botoi beltza</string>
+    <string name="logo_desk">Enpresako logoa</string>
+
+    <!-- Menuaren eta beste pantaila batzuetan erabiltzeko string-ak -->
+    <string name="enpresaOngiEtorri">Ongi Etorri The Beauty Corner</string>
+    <string name="kosemtikoaGehitu">Kosmetiko Berria Gehitu</string>
+    <string name="kosmetikoZerrenda">Kosmetikoen Zerrenda</string>
+    <string name="saioaItxi">Saioa Itxi</string>
+    <string name="irten">Irten</string>
+    <string name="idatzi">Idatzi...</string>
+    <string name="prodGehitu"> Produktua Gehitu</string>
+    <string name="prodEguneratu">Produktua Eguneratu</string>
+
+    <!-- Produktuaren xehetasunen string-ak -->
+    <string name="prodIzena">Izena</string>
+    <string name="prodMota">Mota</string>
+    <string name="prodMarka">Marka</string>
+    <string name="prodJatorria">Jatorria</string>
+    <string name="prodPrezioa">Prezioa (Eurotan)</string>
+    <string name="prodEskuragarritasuna">Eskuragarritasuna</string>
+
+</resources>

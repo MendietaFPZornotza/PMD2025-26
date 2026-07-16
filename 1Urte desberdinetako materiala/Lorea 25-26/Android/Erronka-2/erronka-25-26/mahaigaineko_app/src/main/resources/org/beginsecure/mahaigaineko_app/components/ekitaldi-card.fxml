@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox spacing="10" stylesheets="@../../../../styles/views/ekitaldi-card.css" xmlns="http://javafx.com/javafx/21.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.beginsecure.mahaigaineko_app.controller.EkitaldiCardController">
+    <padding>
+        <Insets bottom="10" left="15" right="15" top="10" />
+    </padding>
+
+    <VBox spacing="5" HBox.hgrow="ALWAYS">
+        <HBox alignment="CENTER_LEFT" spacing="5">
+            <Label fx:id="titleLabel" styleClass="event-title" text="Udako Kontzertua - Kepa Junkera" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnEdit" styleClass="btn-edit" text="✎" />
+            <Button fx:id="btnDelete" onAction="#onDelete" styleClass="btn-delete" text="🗑" />
+        </HBox>
+
+        <Label fx:id="statusLabel" styleClass="event-status" text="aurreikusita" />
+
+        <Label fx:id="descriptionLabel" text="Kepa Junkeraren kontzertua berezia udako ekitaldian" wrapText="true" />
+
+        <HBox spacing="15">
+            <Label fx:id="dateLabel" text="2025-07-15" />
+            <Label fx:id="timeLabel" text="20:30" />
+        </HBox>
+
+        <HBox spacing="15">
+            <Label fx:id="venueLabel" text="Kursaal Auditorium" />
+            <Label fx:id="priceLabel" text="€35" />
+        </HBox>
+
+        <VBox spacing="3">
+            <Label fx:id="ticketsLabel" text="1245 / 1800 (69%)" />
+            <ProgressBar fx:id="ticketsProgress" progress="0.69" />
+        </VBox>
+
+        <HBox spacing="5">
+            <Label text="Diru-sarrerak:" />
+            <Label fx:id="incomeLabel" text="43575€" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Hyperlink fx:id="detailsLink" text="Xehetasunak →" />
+        </HBox>
+    </VBox>
+</HBox>

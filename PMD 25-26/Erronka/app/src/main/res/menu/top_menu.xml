@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Fitxategia Gorde" />
+    <item
+        android:id="@+id/menu_liburuak"
+        android:title="Liburuak"
+        android:icon="@drawable/liburuak"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_autoreak"
+        android:title="Autoreak"
+        android:icon="@drawable/idazlea"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_switch"
+        android:title="Switch"
+        android:icon="@drawable/nahasketa"
+        app:showAsAction="always" />
+</menu>

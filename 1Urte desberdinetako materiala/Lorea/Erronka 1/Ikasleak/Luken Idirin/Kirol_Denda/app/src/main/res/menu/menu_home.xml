@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_add_product"
+        android:title="Kirol produktu Berria Gehitu"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue" />
+    <item
+        android:id="@+id/nav_product_list"
+        android:title="Kirol produktuen Zerrenda"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue" />
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Saioa Itxi"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue" />
+    <item
+        android:id="@+id/nav_exit"
+        android:title="Irten"
+        android:textStyle="bold"
+        android:textColor="@color/dark_blue" />
+</menu>

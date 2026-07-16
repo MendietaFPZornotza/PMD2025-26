@@ -1,0 +1,19 @@
+/* ============================= */
+/*        MAINLAYOUT VIEW        */
+/* ============================= */
+
+/* Contenedor principal */
+.root-pane {
+    -fx-background-color: #F5F7FA;
+    -fx-font-family: "Segoe UI", "Inter", sans-serif;
+}
+
+/* Main content pane */
+#mainContentPane {
+    -fx-background-color: #F5F7FA;
+}
+
+/* Si quieres agregar transiciones o padding general del contenido dinámico */
+#mainContentPane > * {
+    -fx-padding: 20px;
+}

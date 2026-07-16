@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Mvc_layout" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.Mcv_menu" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.Eserlekuak" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.Mvc_eserlekuak" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="Theme.ErronkaEserlekuak" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

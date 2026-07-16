@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Praktika07DatuakGordeDB</string>
+    <string name="cod">Kodigoa</string>
+    <string name="Desc">Deskribapena</string>
+    <string name="Prezioa">Prezioa</string>
+    <string name="Gorde">Gorde</string>
+    <string name="KontsultaK">Kontsultatu Kodea</string>
+    <string name="KontsultaD">Kontsultatu Deskribapena</string>
+    <string name="Ezabatu">Ezabatu</string>
+    <string name="Aldatu">Aldatu</string>
+</resources>

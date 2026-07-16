@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx/21.0.6"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.beginsecure.mahaigaineko_app.controller.reports.TxostenakController"
+            stylesheets="@../../../../styles/txostenak.css"
+            prefWidth="1200" prefHeight="800">
+
+    <!-- HEADER -->
+    <HBox styleClass="header"
+          prefHeight="70"
+          AnchorPane.topAnchor="0"
+          AnchorPane.leftAnchor="0"
+          AnchorPane.rightAnchor="0">
+        <padding>
+            <Insets top="20" right="30" bottom="20" left="30"/>
+        </padding>
+
+        <children>
+            <Label text="Txostenak" styleClass="header-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label text="EkiTop!" styleClass="logo-text"/>
+        </children>
+    </HBox>
+
+    <VBox fx:id="txostenakPane" fillWidth="true" spacing="20" AnchorPane.topAnchor="85.0" AnchorPane.bottomAnchor="0.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+          styleClass="content-pane">
+
+        <padding>
+            <Insets top="30" right="30" bottom="30" left="30"/>
+        </padding>
+
+        <!-- Documents section -->
+        <VBox spacing="15">
+            <HBox styleClass="documentCard" alignment="CENTER_LEFT" spacing="15">
+                <Label text="📄" style="-fx-font-size:32"/>
+                <VBox spacing="5" HBox.hgrow="ALWAYS">
+                    <Label styleClass="doc-title" text="Ekitaldien urteko txostena 2024"/>
+                    <HBox spacing="12">
+                        <Label styleClass="doc-meta" text="📅 2024-12-01"/>
+                        <Label styleClass="doc-meta" text="• 2.4 MB"/>
+                        <Label styleClass="badge-blue" text="ekitaldiak"/>
+                    </HBox>
+                </VBox>
+                <Button onAction="#uploadPDF" styleClass="downloadButton" text="PDFa igo ⬆"/>
+            </HBox>
+        </VBox>
+
+    </VBox>
+
+</AnchorPane>

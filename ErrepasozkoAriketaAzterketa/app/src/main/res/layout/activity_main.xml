@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Código -->
+    <EditText
+        android:id="@+id/etCodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código del vuelo" />
+
+    <!-- Tipo (Spinner) -->
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Origen -->
+    <EditText
+        android:id="@+id/etOrigen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Origen" />
+
+    <!-- Destino -->
+    <EditText
+        android:id="@+id/etDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destino" />
+
+    <!-- Fecha -->
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha" />
+
+    <!-- Aerolínea -->
+    <EditText
+        android:id="@+id/etAerolinea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Aerolínea" />
+
+    <!-- Disponible -->
+    <CheckBox
+        android:id="@+id/checkDisponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disponible" />
+
+    <!-- Botones -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGehitu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Añadir" />
+
+        <Button
+            android:id="@+id/btnEditatu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Editar" />
+
+        <Button
+            android:id="@+id/btnEzabatu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Eliminar" />
+    </LinearLayout>
+
+    <!-- Lista -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

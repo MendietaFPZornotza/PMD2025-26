@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Produktuen listan borratzeko botoiaren esitloa -->
+    <corners android:radius="16dp"/>
+    <solid android:color="@color/gorria"/>
+    <stroke
+        android:width="2dp"
+        android:color="@color/gorria" />
+</shape>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+
+<!-- IZENA -->
+<EditText
+    android:id="@+id/etIzena"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Izena" />
+
+<!-- GENEROA (ENUM -> SPINNER) -->
+<Spinner
+    android:id="@+id/spinnerGeneroa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"/>
+
+<!-- URTEA -->
+<EditText
+    android:id="@+id/etUrtea"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Urtea"
+    android:inputType="number" />
+
+<!-- PLATAFORMA -->
+<EditText
+    android:id="@+id/etPlataforma"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Plataforma" />
+
+<!-- 🏢 ENPRESA -->
+<EditText
+    android:id="@+id/etEnpresa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enpresa" />
+
+<!-- MULTIPLAYER (CHECKBOX NUEVO) -->
+<CheckBox
+    android:id="@+id/checkMultiplayer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Multiplayer"
+    android:layout_marginTop="8dp"/>
+
+<!-- GEHITU -->
+<Button
+    android:id="@+id/btnGehitu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Gehitu" />
+
+<!-- EDITATU -->
+<Button
+    android:id="@+id/btnEditatu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Editatu" />
+
+<!-- EZABATU -->
+<Button
+    android:id="@+id/btnEzabatu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Ezabatu" />
+
+    <!-- LISTA -->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:paddingTop="10dp" />
+
+</LinearLayout>

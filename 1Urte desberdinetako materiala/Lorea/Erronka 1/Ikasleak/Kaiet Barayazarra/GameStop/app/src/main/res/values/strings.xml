@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">proiekto_denda</string>
+
+    <string-array name="genres">
+        <item>Acción</item>
+        <item>Aventura</item>
+        <item>RPG</item>
+        <item>Deportes</item>
+        <item>Estrategia</item>
+        <item>Simulación</item>
+        <!-- Agrega más géneros según sea necesario -->
+    </string-array>
+</resources>

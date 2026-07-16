@@ -1,0 +1,151 @@
+/* ============================= */
+/*  ERABILTZAILE BERRIA VIEW CSS */
+/* ============================= */
+
+/* Contenedor principal del formulario */
+.form-card {
+    -fx-max-width: 800px;
+    -fx-padding: 30px;
+    -fx-spacing: 15px;
+}
+
+/* Título del formulario */
+.form-card > .header-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A202C;
+}
+
+/* Labels */
+.form-card Label {
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #2D3748;
+}
+
+/* Campos de texto */
+.form-card TextField,
+.form-card PasswordField {
+    -fx-background-color: white;
+    -fx-text-fill: #2D3748;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1px;
+    -fx-padding: 10px 14px;
+}
+
+.form-card TextField:focused,
+.form-card PasswordField:focused {
+    -fx-border-color: #4C51BF;
+    -fx-effect: dropshadow(gaussian, rgba(76,81,191,0.25), 8, 0.3, 0, 2);
+}
+
+/* ComboBox ajustes */
+.form-card ComboBox {
+    -fx-background-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1px;
+    -fx-padding: 6px 8px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #2D3748;
+    -fx-pref-height: 38px;
+    -fx-pref-width: 250px;
+}
+
+.form-card ComboBox:hover {
+    -fx-border-color: #4C51BF;
+}
+
+.form-card ComboBox:focused {
+    -fx-border-color: #4C51BF;
+    -fx-effect: dropshadow(gaussian, rgba(76,81,191,0.2), 6, 0.3, 0, 2);
+}
+
+.form-card .combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.form-card .combo-box .arrow {
+    -fx-background-color: #718096;
+}
+
+.form-card .combo-box:hover .arrow {
+    -fx-background-color: #4C51BF;
+}
+
+.form-card .combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #E2E8F0;
+}
+
+/* Botonera inferior */
+.form-card HBox {
+    -fx-padding: 10px 0 0 0;
+    -fx-spacing: 20px;
+}
+
+/* Botones */
+.btn-add {
+    -fx-background-color: #4C51BF;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(76, 81, 191, 0.3), 8, 0.4, 0, 3);
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.btn-add:hover {
+    -fx-background-color: #434190;
+    -fx-scale-y: 1.02;
+    -fx-scale-x: 1.02;
+}
+
+.btn-cancel {
+    -fx-background-color: #f43838;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(76, 81, 191, 0.3), 8, 0.4, 0, 3);
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.btn-cancel:hover {
+    -fx-background-color: #cc2c2c;
+    -fx-scale-y: 1.02;
+    -fx-scale-x: 1.02;
+}
+
+/* Si quieres exactamente el mismo nombre de clase "type" */
+.combo-box.type {
+    -fx-pref-width: 250px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #E2E8F0;
+    -fx-border-width: 1px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #2D3748;
+    -fx-padding: 6px 8px;
+}
+
+.combo-box.type:hover {
+    -fx-border-color: #4C51BF;
+}
+
+.combo-box.type:focused {
+    -fx-border-color: #4C51BF;
+    -fx-effect: dropshadow(gaussian, rgba(76,81,191,0.2), 6, 0.3, 0, 2);
+}

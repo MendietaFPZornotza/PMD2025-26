@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.lang.String?>
+<AnchorPane stylesheets="@../../../../styles/erabiltzaile-berria.css"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.beginsecure.mahaigaineko_app.controller.users.ErabiltzaileBerriaController">
+
+    <!-- CENTRADOR -->
+    <StackPane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+        <!-- PANEL -->
+        <VBox styleClass="form-card">
+
+            <Label styleClass="header-title" text="Erabiltzaile berria sortu" />
+
+            <TextField fx:id="izenaField" promptText="Izena" />
+            <TextField fx:id="emailaField" promptText="Emaila" />
+
+            <!-- Pasahitza -->
+            <PasswordField fx:id="pasahitzaField" promptText="Pasahitza" />
+
+            <!-- Mota -->
+            <ComboBox fx:id="motaCombo" promptText="Mota" styleClass="type">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <!-- Ajusta estos valores a los que realmente usa tu server (ADMIN / LANGILEA / BEZEROA, etc.) -->
+                        <String fx:value="ADMIN" />
+                        <String fx:value="LANGILEA" />
+                        <String fx:value="BEZEROA" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <HBox alignment="CENTER" spacing="20">
+                <Button fx:id="btnSave" onAction="#saveUser" styleClass="btn-add" text="Guardar" />
+                <Button fx:id="btnCancel" onAction="#cancelUser" styleClass="btn-cancel" text="Cancelar" />
+            </HBox>
+
+        </VBox>
+    </StackPane>
+</AnchorPane>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<?import javafx.scene.image.ImageView?>
+<VBox fx:id="root"
+      spacing="10"
+      styleClass="card-root"
+      stylesheets="@../../../../styles/ekitaldi-card.css"
+      xmlns="http://javafx.com/javafx/21.0.6"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.beginsecure.mahaigaineko_app.controller.events.EkitaldiCardController">
+
+    <!-- HEADER -->
+    <StackPane fx:id="headerPane" styleClass="card-header header-purple">
+        <padding>
+            <Insets top="14" right="14" bottom="14" left="14"/>
+        </padding>
+
+        <children>
+            <VBox spacing="8">
+
+                <HBox alignment="CENTER_LEFT" spacing="10">
+                    <!-- Event image -->
+                    <ImageView fx:id="eventImage"
+                               fitWidth="46" fitHeight="46"
+                               preserveRatio="true"
+                               smooth="true"
+                               pickOnBounds="true"
+                               styleClass="event-image"/>
+                    <!-- Header icon -->
+                    <SVGPath styleClass="header-icon"
+                             content="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H5V8h14v13z"/>
+
+                    <!-- Title + status -->
+                    <VBox spacing="4" HBox.hgrow="ALWAYS">
+                        <Label fx:id="titleLabel" styleClass="header-title" text="Udako Kontzertua - Kepa Junkera" wrapText="true"/>
+                        <Label fx:id="statusLabel" styleClass="header-pill" text="aurreikusita"/>
+                    </VBox>
+
+                    <!-- Actions -->
+                    <HBox spacing="10" alignment="CENTER_RIGHT">
+                        <SVGPath fx:id="btnEdit"
+                                 onMouseClicked="#onEditEvent"
+                                 styleClass="header-action"
+                                 content="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zm2.92 2.83H5v-.92l9.06-9.06.92.92L5.92 20.08zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/>
+                        <SVGPath fx:id="btnDelete"
+                                 onMouseClicked="#onDelete"
+                                 styleClass="header-action"
+                                 content="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm2.46-7.12 1.41-1.41L12 12.59l2.12-2.12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14 8.46 11.88zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"/>
+                    </HBox>
+                </HBox>
+
+                <!-- Short description -->
+                <Label fx:id="descriptionLabel"
+                       styleClass="header-desc"
+                       text="Kepa Junkeraren kontzertua berezia udako ekitaldian"
+                       wrapText="true"/>
+            </VBox>
+        </children>
+    </StackPane>
+
+    <!-- BODY -->
+    <VBox spacing="10" styleClass="card-body">
+        <padding>
+            <Insets top="2" right="14" bottom="14" left="14"/>
+        </padding>
+
+        <!-- Date / Time -->
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="row">
+            <SVGPath styleClass="row-icon"
+                     content="M19 3h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H5V8h14v13z"/>
+            <Label fx:id="dateLabel" styleClass="row-text" text="2025-07-15"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <!-- Clock -->
+            <SVGPath styleClass="row-icon"
+                     content="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 14.5A6.5 6.5 0 1 1 12 5.5a6.5 6.5 0 0 1 0 13zm.5-10H11v4l3.2 1.9.75-1.23-2.45-1.45V8.5z"/>
+            <Label fx:id="timeLabel" styleClass="row-text" text="20:30"/>
+        </HBox>
+
+        <!-- Venue / Price -->
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="row">
+            <SVGPath styleClass="row-icon"
+                     content="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <Label fx:id="venueLabel" styleClass="row-text" text="Kursaal Auditorium" wrapText="true"/>
+
+            <Region HBox.hgrow="ALWAYS"/>
+
+            <!-- Dollar -->
+            <SVGPath styleClass="row-icon"
+                     content="M12 2c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 .88-.58 1.63-1.39 1.9l-.61.2C10.83 8.38 9 9.64 9 12c0 1.86 1.27 3.43 3 3.87V18h2v-2.13c1.73-.44 3-2.01 3-3.87h-2c0 1.1-.9 2-2 2s-2-.9-2-2c0-.88.58-1.63 1.39-1.9l.61-.2C13.17 9.62 15 8.36 15 6c0-1.86-1.27-3.43-3-3.87V2h-2z"/>
+            <Label fx:id="priceLabel" styleClass="row-text row-price" text="35€"/>
+        </HBox>
+
+        <!-- Tickets -->
+        <VBox spacing="6" styleClass="tickets-box">
+            <Label styleClass="tickets-title" text="Sarrerak"/>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label fx:id="ticketsLabel" styleClass="row-text" text="—"/>
+                <Region HBox.hgrow="ALWAYS"/>
+            </HBox>
+        </VBox>
+
+        <Separator/>
+
+        <!-- Footer: Income -->
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="footer">
+            <Label styleClass="footer-muted" text="Diru-sarrerak:"/>
+            <Label fx:id="incomeLabel" styleClass="footer-strong" text="—"/>
+            <Region HBox.hgrow="ALWAYS"/>
+        </HBox>
+
+    </VBox>
+</VBox>

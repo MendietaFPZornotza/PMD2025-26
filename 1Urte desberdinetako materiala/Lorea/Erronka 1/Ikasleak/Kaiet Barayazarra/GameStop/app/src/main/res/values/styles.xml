@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Usamos el color de fondo personalizado -->
+        <item name="android:colorBackground">@color/backgroundColor</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/secondaryColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Configuramos colores de texto -->
+        <item name="android:textColorPrimary">@color/primaryColor</item>
+        <item name="android:textColorSecondary">@color/secondaryColor</item>
+    </style>
+
+    <!-- Estilo para los botones -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/primaryColor</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Estilo para los EditText -->
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:backgroundTint">@color/primaryColor</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textColorHint">@color/secondaryColor</item>
+    </style>
+
+</resources>

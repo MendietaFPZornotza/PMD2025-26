@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="logo_splash">#F5DEB3</color>
+
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="priceColor">#388E3C</color>
+    <color name="buttonPrimary">#1976D2</color>
+    <color name="buttonDanger">#D32F2F</color>
+
+</resources>

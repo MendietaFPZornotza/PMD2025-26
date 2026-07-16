@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "https://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Conexión MySQL -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+
+        <property name="hibernate.connection.url">
+            jdbc:mysql://IP_DEL_SERVIDOR:3306/ekitaldiak_db?useSSL=false&amp;serverTimezone=UTC
+        </property>
+
+        <property name="hibernate.connection.username">hibernate_user</property>
+        <property name="hibernate.connection.password">PasswordSegura123!</property>
+
+        <!-- Dialecto -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- Mostrar SQL -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Crear tablas automáticamente -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Clases anotadas -->
+        <mapping class="com.datuatzipena2425.entitateak.Ekitaldia"/>
+        <mapping class="com.datuatzipena2425.entitateak.Eszenatokia"/>
+
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21.0.6"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.beginsecure.mahaigaineko_app.controller.layout.MainLayoutController">
+
+    <children>
+
+        <!-- SIDEBAR (SIEMPRE VISIBLE) -->
+        <fx:include fx:id="sidebarInclude"
+                    source="sidebar.fxml"
+                    AnchorPane.topAnchor="0"
+                    AnchorPane.bottomAnchor="0"
+                    AnchorPane.leftAnchor="0"/>
+
+        <!-- CONTENIDO DINÁMICO -->
+        <AnchorPane fx:id="mainContentPane"
+                    AnchorPane.topAnchor="0"
+                    AnchorPane.bottomAnchor="0"
+                    AnchorPane.leftAnchor="200"
+                    AnchorPane.rightAnchor="0"
+                    style="-fx-background-color: #F5F7FA;" />
+
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,164 @@
+/* ============================= */
+/*         TXOSTENAK VIEW        */
+/* ============================= */
+
+.root-pane, .content-pane {
+    -fx-background-color: #F5F7FA;
+    -fx-font-family: "Segoe UI", "Inter", sans-serif;
+    -fx-padding: 20px;
+}
+
+/* Metric Cards */
+.metricCard {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0.2, 0, 2);
+}
+
+.metric-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #718096;
+}
+
+.metric-value {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2D3748;
+}
+
+.metric-value-small {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2D3748;
+}
+
+.metric-change-up {
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #48BB78;
+}
+
+.metric-change-down {
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #F56565;
+}
+
+/* Chart Cards */
+.chartCard {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0.2, 0, 2);
+}
+
+.chart-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #2D3748;
+}
+
+.chart-subtitle {
+    -fx-font-size: 13px;
+    -fx-text-fill: #718096;
+}
+
+.chart-label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #2D3748;
+}
+
+.chart-value {
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #2D3748;
+}
+
+/* Chart bars */
+.chart-bar {
+    -fx-background-radius: 4px;
+    -fx-pref-height: 8px;
+}
+
+.chart-bar.blue { -fx-background-color: #4299E1; }
+.chart-bar.purple { -fx-background-color: #9F7AEA; }
+.chart-bar.pink { -fx-background-color: #FC5C7D; }
+.chart-bar.gray { -fx-background-color: #718096; }
+
+/* Document Cards */
+.documentCard {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-padding: 15px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 6,0.2,0,2);
+}
+
+.doc-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #2D3748;
+}
+
+.doc-meta {
+    -fx-font-size: 12px;
+    -fx-text-fill: #718096;
+}
+
+.badge-blue {
+    -fx-background-color: #4299E1;
+    -fx-text-fill: white;
+    -fx-padding: 2px 8px;
+    -fx-background-radius: 6px;
+}
+
+.badge-green {
+    -fx-background-color: #48BB78;
+    -fx-text-fill: white;
+    -fx-padding: 2px 8px;
+    -fx-background-radius: 6px;
+}
+
+.downloadButton {
+    -fx-background-color: #4C51BF;
+    -fx-effect: dropshadow(gaussian, rgba(76,81,191,0.3), 8, 0.4, 0, 3);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 12px;
+    -fx-cursor: hand;
+}
+
+.downloadButton:hover {
+    -fx-scale-x: 1.01;
+    -fx-scale-y: 1.01;
+}
+
+
+/* ============================= */
+/*            HEADER             */
+/* ============================= */
+
+.header {
+    -fx-background-color: white;
+    -fx-border-color: #E5E8EB;
+    -fx-border-width: 0 0 1 0;
+}
+
+.header-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A202C;
+}
+
+.logo-text {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(to bottom, #6c63ff, #434190);
+    -fx-font-family: "Segoe UI Black", "Arial Black", sans-serif;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 2, 0, 1, 1);
+}

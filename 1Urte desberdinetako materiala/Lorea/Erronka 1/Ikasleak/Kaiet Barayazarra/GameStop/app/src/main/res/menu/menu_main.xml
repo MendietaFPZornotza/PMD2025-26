@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Opción para agregar un nuevo videojuego -->
+    <item
+        android:id="@+id/menu_add_game"
+        android:title="Bideojoko Berria Gehitu"
+        />
+
+    <!-- Opción para ver la lista de videojuegos -->
+    <item
+        android:id="@+id/menu_list_games"
+        android:title="Bideojokoen Zerrenda"
+         />
+
+    <!-- Opción para cerrar sesión -->
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Saioa Itxi"
+         />
+
+    <!-- Opción para salir de la aplicación -->
+    <item
+        android:id="@+id/menu_exit"
+        android:title="Irten"
+        />
+</menu>

@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.Proiekto_denda" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/secondaryColor</item> <!-- Cambié el nombre para un atributo válido -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/backgroundColor</item>
+    </style>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_ticket"
+        android:roundIcon="@drawable/ic_ticket"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ErronkaProba">
+
+        <activity
+            android:name=".view.auth.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ErronkaProba.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.erronka_proba.view.auth.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba"/>
+
+        <!-- HOME -->
+        <activity
+            android:name="com.example.erronka_proba.view.home.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba" />
+
+        <activity android:name="com.example.erronka_proba.view.auth.SignupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba"/>
+        <activity android:name="com.example.erronka_proba.view.menu.PelikulakActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba"/>
+        <activity android:name="com.example.erronka_proba.view.menu.AntzerkiakActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba"/>
+        <activity android:name="com.example.erronka_proba.view.menu.KontzertuakActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba"/>
+        <activity android:name="com.example.erronka_proba.view.profile.NireProfilaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba"/>
+        <activity android:name="com.example.erronka_proba.view.menu.GuActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba"/>
+        <activity android:name="com.example.erronka_proba.view.purchase.EventDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba"/>
+        <activity android:name="com.example.erronka_proba.view.purchase.PurchaseConfirmActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba"/>
+        <activity android:name="com.example.erronka_proba.view.purchase.TicketQrActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ErronkaProba"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

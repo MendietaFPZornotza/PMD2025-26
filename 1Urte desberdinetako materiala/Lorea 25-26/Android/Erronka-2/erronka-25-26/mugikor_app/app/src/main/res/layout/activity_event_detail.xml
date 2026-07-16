@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Activity: EventDetailActivity (activity_event_detail.xml) -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- GOIKO BARRA / TOOLBAR: titulua + atzera botoia -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- EDUKI NAGUSIA: scroll egin ahal izateko -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- TXARTELA (CARD): Ekitaldiaren informazioa (poster + datuak) -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="3dp"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:orientation="vertical">
+
+                    <!-- POSTERRA -->
+                    <ImageView
+                        android:id="@+id/ivPoster"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_movie"
+                        />
+
+                    <!-- IZENBURUA -->
+                    <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_izenburua"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="#111827"
+                        android:layout_marginTop="10dp"/>
+
+                    <!-- META: generoa + aretoa + data/ordua -->
+                    <TextView
+                        android:id="@+id/tvMeta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_summary"
+                        android:textColor="#6B7280"
+                        android:layout_marginTop="4dp"/>
+
+                    <!-- SINOPSIA -->
+                    <TextView
+                        android:id="@+id/tvSynopsis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_sinopsia"
+                        android:textColor="#374151"
+                        android:layout_marginTop="8dp"/>
+
+                    <!-- PREZIOA -->
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_prezioa"
+                        android:textStyle="bold"
+                        android:textColor="#2563EB"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- ATAL IZENBURUA: eserleku aukeraketa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/details_aukeratu"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#1730B8"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- PANTAILAREN ETIKETA -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/details_pantaila"
+                android:textColor="#6B7280"
+                android:gravity="center"/>
+
+            <!-- PANTAILAREN “BARRA” (lerro gris) -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:background="#D1D5DB"/>
+
+            <!-- ESERLEKUEN GRID-A (SeatAdapter) -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSeats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"/>
+
+            <!-- LEYENDA / AZALPENA: koloreek zer esan nahi duten -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- LIBRE -->
+                <View
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/bg_seat_free"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_libre"
+                    android:textColor="#111827"/>
+
+                <!-- AUKERATUTA -->
+                <View
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/bg_seat_selected"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_aukeratuta"
+                    android:textColor="#111827"/>
+
+                <!-- OKUPATUA -->
+                <View
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/bg_seat_occupied"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_okupatuta"
+                    android:textColor="#111827"/>
+            </LinearLayout>
+
+            <!-- TXARTELA (CARD): laburpena (eserlekuak + prezioa) -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="14dp"
+                    android:orientation="vertical">
+
+                    <!-- AUKERATUTAKO ESERLEKUAK -->
+                    <TextView
+                        android:id="@+id/tvSeatsChosen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_eserlekua"
+                        android:textColor="#111827"/>
+
+                    <!-- GUZTIRAKO PREZIOA -->
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_azkenPrezioa"
+                        android:textStyle="bold"
+                        android:textColor="#2563EB"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- CTA BOTOIA: ordainketara joateko -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/details_ordaindu"
+                app:cornerRadius="14dp"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

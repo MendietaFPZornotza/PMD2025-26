@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="red">#F41414</color>
+    <color name="primaryColor">#807462</color> <!-- Cambié primaryColor para que coincida -->
+    <color name="secondaryColor">#a69785</color>
+    <color name="colorAccent">#b8faff</color>
+    <color name="backgroundColor">#e8fdff</color>
+</resources>
+

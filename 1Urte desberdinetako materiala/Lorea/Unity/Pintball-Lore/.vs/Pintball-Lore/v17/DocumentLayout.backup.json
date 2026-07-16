@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\assets\\scripts\\main scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\main scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\assets\\scripts\\field components\\plunger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\field components\\plunger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|d:\\zornotza 24-25\\pmd\\lorea\\unity\\pintball-lore\\assets\\scripts\\utils\\achievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utils\\achievement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\assets\\scripts\\utils\\crates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utils\\crates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\assets\\scripts\\main scripts\\playergui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\main scripts\\playergui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\assets\\scripts\\field components\\flag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\field components\\flag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\assets\\scripts\\scoringobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scoringobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\assets\\scripts\\field components\\slingshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\field components\\slingshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\assets\\scripts\\main scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\main scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\assets\\scripts\\field components\\bumper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\field components\\bumper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\assets\\scripts\\boostobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87B08D60-C93A-6F5E-05C2-F7975FD05A5E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\boostobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Crates.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Utils\\Crates.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\Crates.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Utils\\Crates.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Utils\\Crates.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAA+wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T12:33:10.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Main Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Main Scripts\\Player.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Main Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Main Scripts\\Player.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T11:30:23.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Bumper.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Field Components\\Bumper.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Field Components\\Bumper.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Field Components\\Bumper.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Field Components\\Bumper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T11:29:21.575Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Movement.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Main Scripts\\Movement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Main Scripts\\Movement.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Main Scripts\\Movement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Main Scripts\\Movement.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAkwCIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T11:27:51.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Slingshot.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Field Components\\Slingshot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Field Components\\Slingshot.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Field Components\\Slingshot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Field Components\\Slingshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T11:21:26.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ScoringObject.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\ScoringObject.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ScoringObject.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\ScoringObject.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ScoringObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T11:20:18.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Flag.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Field Components\\Flag.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Field Components\\Flag.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Field Components\\Flag.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Field Components\\Flag.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T11:20:05.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerGUI.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Main Scripts\\PlayerGUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Main Scripts\\PlayerGUI.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Main Scripts\\PlayerGUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Main Scripts\\PlayerGUI.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAIwAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T11:43:31.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Plunger.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Field Components\\Plunger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Field Components\\Plunger.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Field Components\\Plunger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Field Components\\Plunger.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAA5wAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T12:09:26.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Achievement.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Utils\\Achievement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\Achievement.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\Utils\\Achievement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Utils\\Achievement.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T12:33:24.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BoostObject.cs",
+              "DocumentMoniker": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\BoostObject.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BoostObject.cs",
+              "ToolTip": "D:\\Zornotza 24-25\\PMD\\Lorea\\Unity\\Pintball-Lore\\Assets\\Scripts\\BoostObject.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BoostObject.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T11:10:24.196Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

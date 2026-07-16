@@ -1,0 +1,16 @@
+<!-- Menu: menu_profile.xml -> MainActivity-ko profil botoiko PopupMenu (goiko eskuineko ikonoa) -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- EKINTZA: profila editatu (NireProfilaActivity) -->
+    <item
+        android:id="@+id/action_edit_profile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/menu_nireProfila" />
+
+    <!-- EKINTZA: saioa itxi (LoginActivity-ra) -->
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/ic_logout"
+        android:iconTint="@color/black"
+        android:title="@string/menu_saioaItxi" />
+</menu>

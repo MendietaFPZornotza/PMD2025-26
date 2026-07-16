@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">LiburuDendaProjektua</string>
+    <string name="erabizena">Erabiltzaile-izena:</string>
+    <string name="korreo">Posta-Elektronikoa:</string>
+    <string name="pass">Pasahitza:</string>
+    <string name="erregistratu">Erregistratu</string>
+    <string name="sarreraMezua">
+    Ongi etorri BookMarket Liburutegira!\n\n
+    Aplikazio honen bidez, zure liburuak erraz kudeatu ahal izango dituzu:\n
+    - Liburu berriak gehitu.\n
+    - Liburuen informazioa eguneratu.\n
+    - Zerrendatik liburuak ezabatu.\n\n
+    Zure liburutegia eroso eta azkar antolatu nahi baduzu, hasi hemen!\n\n
+        Goiko menuan aukeratu egin nahi duzuna
+</string>
+    <string-array name="hiriak_array">
+        <item>Madril</item>
+        <item>Bartzelona</item>
+        <item>Valentzia</item>
+    </string-array>
+    <string-array name="generoa_array">
+        <item>Nobela</item>
+        <item>Poesia</item>
+        <item>Zientzia</item>
+        <item>Historia</item>
+    </string-array>
+    <string-array name="argitaletxea_array">
+        <item>Alfaguara</item>
+        <item>Alianza</item>
+        <item>Almadía</item>
+        <item>Anagrama</item>
+    </string-array>
+</resources>

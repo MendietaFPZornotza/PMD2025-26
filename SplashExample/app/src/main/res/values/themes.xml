@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SplashExample" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.SplashExample.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/purple_700</item>
+    </style>
+</resources>

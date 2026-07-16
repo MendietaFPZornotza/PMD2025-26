@@ -1,0 +1,90 @@
+/* ===== ROOT & BACKGROUND ===== */
+.root-pane {
+    -fx-background-color: linear-gradient(to bottom right, #e6f0ff, #f0f4ff);
+}
+
+/* ===== LOGIN CARD ===== */
+.login-card {
+    -fx-background-color: white;
+    -fx-padding: 30;
+    -fx-spacing: 15;
+    -fx-alignment: center;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 15,0,0,5);
+}
+
+/* ===== TITLES ===== */
+.login-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.login-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #888888;
+}
+
+/* ===== FORM LABELS ===== */
+.field-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #555555;
+}
+
+/* ===== TEXT FIELDS ===== */
+.text-field {
+    -fx-pref-width: 300px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #cccccc;
+    -fx-padding: 8 10 8 10;
+}
+
+.text-field:focused {
+    -fx-border-color: #6c63ff;
+}
+
+/* ===== BUTTONS ===== */
+.login-button {
+    -fx-background-color: #6c63ff;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #574fd6;
+}
+
+.exit-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888888;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+}
+
+.exit-button:hover {
+    -fx-text-fill: #ff4b5c;
+}
+
+/* ===== DEMO CREDENTIALS ===== */
+.demo-credentials {
+    -fx-background-color: #f7f7f7;
+    -fx-padding: 10;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-alignment: center-left;
+    -fx-spacing: 3;
+}
+
+.demo-title {
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.demo-text {
+    -fx-font-size: 12px;
+}

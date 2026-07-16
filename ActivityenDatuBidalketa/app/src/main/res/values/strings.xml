@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActivityenDatuBidalketa</string>
+    <string name="btnIreki">Ireki</string>
+    <string name="mezua">Ongi etorri bigarren Activity-ra!</string>
+</resources>

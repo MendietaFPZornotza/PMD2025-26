@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Título de la actividad -->
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Erregistratu"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Campo de Usuario -->
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Erabiltzaile Izena"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"/>
+
+    <!-- Campo de Correo Electrónico -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Posta Elektronikoa"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"/>
+
+    <!-- Campo de Contraseña -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pasahitza"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"/>
+
+    <!-- Radio Buttons para Genero -->
+    <RadioGroup
+        android:id="@+id/genderGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/maleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gizonezkoa"/>
+
+        <RadioButton
+            android:id="@+id/femaleRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emakumezkoa"/>
+
+        <RadioButton
+            android:id="@+id/otherRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bestea"/>
+    </RadioGroup>
+
+    <!-- Spinner para Ciudad -->
+    <Spinner
+        android:id="@+id/citySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botón para Registrar -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Erregistratu"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"/>
+
+    <!-- Enlace para ir al login -->
+    <TextView
+        android:id="@+id/loginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontua daukazu? Sartu"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+</LinearLayout>

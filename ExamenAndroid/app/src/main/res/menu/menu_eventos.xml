@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_agregar"
+        android:title="Gehitu"
+        android:icon="@drawable/ic_add"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_editar"
+        android:title="Editatu"
+        android:icon="@drawable/ic_edit"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_eliminar"
+        android:title="Ezabatu"
+        android:icon="@drawable/ic_delete"
+        android:showAsAction="ifRoom"/>
+</menu>

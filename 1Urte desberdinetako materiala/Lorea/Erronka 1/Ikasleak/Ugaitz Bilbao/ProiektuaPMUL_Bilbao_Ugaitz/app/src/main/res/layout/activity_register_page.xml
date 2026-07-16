@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#002B4C"
+    tools:context=".RegisterPage">
+
+    <!-- Gmail EditText -->
+    <EditText
+        android:id="@+id/tfgmail"
+        android:layout_width="340dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Sartu Gmail-a"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A9DDF5"
+        android:backgroundTint="#007ACC"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.492"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/ftuser" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_width="368dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#007ACC"
+    android:text="ERREGISTRATU"
+    android:textColor="#FFFFFF"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.488"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.949" />
+
+    <!-- Username EditText -->
+    <EditText
+        android:id="@+id/ftuser"
+        android:layout_width="340dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Erabiltzailea Sartu"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A9DDF5"
+        android:backgroundTint="#007ACC"
+    android:textColorLink="#00668B"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.492"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="357dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#007ACC"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.481"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.633" />
+
+    <!-- CheckBox -->
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="344dp"
+        android:layout_height="56dp"
+        android:text="Baldintzak eta terminoak onartzen dituzu?"
+        android:textColor="#FFFFFF"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.388"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.785" />
+
+    <!-- Gender RadioGroup -->
+    <RadioGroup
+        android:id="@+id/radioGroupGenero"
+        android:layout_width="359dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbboy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Mutila"
+            android:textColor="#FFFFFF"
+        android:textColorHint="#A9DDF5" />
+
+        <RadioButton
+            android:id="@+id/rbgirl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Neska"
+            android:textColor="#FFFFFF"
+        android:textColorHint="#A9DDF5" />
+
+        <RadioButton
+            android:id="@+id/rbbestea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Bestea"
+            android:textColor="#FFFFFF"
+        android:textColorHint="#A9DDF5" />
+    </RadioGroup>
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/ftpassword"
+        android:layout_width="338dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Sartu Pasahitza"
+        android:inputType="textPassword"
+        android:backgroundTint="#007ACC"
+    android:textColor="#FFFFFF"
+    android:textColorHint="#A9DDF5"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.493"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tfgmail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

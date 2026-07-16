@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="sidebar" minHeight="600.0" minWidth="850.0" prefHeight="600.0" prefWidth="1200.0" stylesheets="@../../../../styles/sidebar.css" xmlns="http://javafx.com/javafx/21.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.beginsecure.mahaigaineko_app.controller.layout.SidebarController">
+    <children>
+        <AnchorPane fx:id="menuPane" prefHeight="600.0" prefWidth="200.0" styleClass="menuPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="adminPanelTitle" layoutX="20.0" layoutY="20.0" text="Kudeatzaile panela" wrapText="true" />
+
+                <VBox fx:id="menuButtonsContainer" prefWidth="200.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="80.0">
+                    <children>
+                        <Button fx:id="btnEkitaldiak" alignment="CENTER_LEFT" maxWidth="Infinity" mnemonicParsing="false" onAction="#onEkitaldiak" styleClass="menuButtons" text="  Ekitaldiak">
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../images/ic_ekitaldia.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="btnEszenatokiak" alignment="CENTER_LEFT" maxWidth="Infinity" mnemonicParsing="false" onAction="#onEszenatokiak" styleClass="menuButtons" text="  Eszenatokiak">
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../images/ubication.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="btnErabiltzaileak" alignment="CENTER_LEFT" maxWidth="Infinity" mnemonicParsing="false" onAction="#onErabiltzaileak" styleClass="menuButtons" text="  Erabiltzaileak">
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../images/users.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Button fx:id="btnTxostenak" alignment="CENTER_LEFT" maxWidth="Infinity" mnemonicParsing="false" onAction="#onTxostenak" styleClass="menuButtons" text="  Txostenak">
+                            <graphic>
+                                <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../images/ic_txostena.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </children>
+                </VBox>
+
+                <VBox fx:id="irtenContainer" alignment="CENTER" prefWidth="140.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+                    <Button fx:id="btnIrten" mnemonicParsing="false" onAction="#onIrten" styleClass="btnIrten" text="Saioa itxi" />
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Edukia Nagusia -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Barra de Herramientas -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:titleTextColor="@android:color/white"
+            android:title="Bideojokoaren Xehetasunak" />
+
+        <!-- Edukia -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <!-- Logoa -->
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/logo21"
+                    android:contentDescription="Logoa"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Izenburua -->
+                <EditText
+                    android:id="@+id/etGameTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bideojokoaren Izenburua"
+                    android:layout_marginBottom="12dp"
+                    android:padding="8dp" />
+
+                <!-- Generoa -->
+                <Spinner
+                    android:id="@+id/spinnerGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:entries="@array/genres" />
+
+
+                <!-- Plataforma -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Plataforma:"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <CheckBox
+                        android:id="@+id/checkPS5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PS5" />
+
+                    <CheckBox
+                        android:id="@+id/checkXbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xbox" />
+
+                    <CheckBox
+                        android:id="@+id/checkPC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PC" />
+
+                    <CheckBox
+                        android:id="@+id/checkSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nintendo Switch" />
+                </LinearLayout>
+
+                <!-- Prezioa -->
+                <EditText
+                    android:id="@+id/etPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Prezioa"
+                    android:layout_marginBottom="12dp"
+                    android:padding="8dp"
+                    android:inputType="numberDecimal" />
+
+                <!-- Deskribapena -->
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Deskribapena"
+                    android:layout_marginBottom="12dp"
+                    android:padding="8dp"
+                    android:inputType="textMultiLine"
+                    android:lines="3" />
+
+                <!-- Eskuragarritasuna -->
+                <CheckBox
+                    android:id="@+id/checkAvailability"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eskuragarritasuna"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Eguneratu eta Ezabatu botoiak -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/btnUpdateGame"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Eguneratu"
+                        android:backgroundTint="?attr/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:layout_marginEnd="8dp" />
+
+                    <Button
+                        android:id="@+id/btnDeleteGame"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ezabatu"
+                        android:backgroundTint="?attr/colorError"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Navigation View -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_main" />
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,27 @@
+<!-- Menu: menu_drawer.xml -> MainActivity-ko NavigationView (alboko menua / drawer) -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- MENU AUKERA: pelikulak zerrendara -->
+    <item
+        android:id="@+id/nav_movies"
+        android:icon="@drawable/ic_movie"
+        android:title="@string/menu_pelikulak" />
+
+    <!-- MENU AUKERA: antzerkiak zerrendara -->
+    <item
+        android:id="@+id/nav_theatre"
+        android:icon="@drawable/ic_theatre"
+        android:title="@string/menu_antzerkiak" />
+
+    <!-- MENU AUKERA: kontzertuak zerrendara -->
+    <item
+        android:id="@+id/nav_concerts"
+        android:icon="@drawable/ic_mic"
+        android:title="@string/menu_kontzertuak" />
+
+    <!-- MENU AUKERA: “Guri buruz” pantaila -->
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_info"
+        android:title="@string/menu_guriBuruz" />
+</menu>

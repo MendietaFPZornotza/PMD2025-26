@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane styleClass="root-pane" stylesheets="@../../../../styles/login.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21.0.6" fx:controller="org.beginsecure.mahaigaineko_app.controller.auth.LoginController">
+
+<!-- Panel central -->
+    <VBox spacing="15" alignment="CENTER" styleClass="login-card"
+          prefWidth="350" prefHeight="400"
+          layoutX="225" layoutY="150">
+
+        <Label text="Administrazio Panela" styleClass="login-title"/>
+        <Label text="Saioa hasi kudeaketa atalera sartzeko" styleClass="login-subtitle"/>
+
+        <VBox spacing="10" alignment="CENTER" prefWidth="300">
+            <Label text="Email" styleClass="field-label"/>
+            <TextField fx:id="emailField" promptText="admin@admin.com" styleClass="text-field"/>
+
+            <Label text="Pasahitza" styleClass="field-label"/>
+            <PasswordField fx:id="passwordField" promptText="********" styleClass="text-field"/>
+        </VBox>
+
+        <Button text="Saioa hasi" fx:id="btnLogin" onAction="#btnLoginAction" styleClass="login-button"/>
+
+        <Button text="Exit" fx:id="btnExit" onAction="#btnExitAction" styleClass="exit-button"/>
+
+        <VBox styleClass="demo-credentials">
+            <Label text="Demo kredentzialak:" styleClass="demo-title"/>
+            <Label text="Email: admin@admin.com" styleClass="demo-text"/>
+            <Label text="Pasahitza: admin" styleClass="demo-text"/>
+        </VBox>
+    </VBox>
+</AnchorPane>

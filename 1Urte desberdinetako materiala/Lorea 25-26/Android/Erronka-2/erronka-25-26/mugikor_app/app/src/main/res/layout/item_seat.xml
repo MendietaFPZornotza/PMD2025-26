@@ -1,0 +1,25 @@
+<!-- Layout: item_seat.xml -> SeatAdapter.SeatVH (EventDetailActivity-ko eserlekuen grid-a) -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="28dp"
+    android:layout_height="28dp"
+    android:layout_margin="6dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless">
+
+    <!-- Eserlekuaren oinarria (FREE/SELECTED/OCCUPIED arabera background aldatzen da) -->
+    <View
+        android:id="@+id/vSeat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_seat_free"/>
+
+    <!-- “✓” marka: aukeratuta dagoenean bakarrik bistaratzen da -->
+    <TextView
+        android:id="@+id/tvCheck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/seat_aukeratuta"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:visibility="gone"/>
+</FrameLayout>

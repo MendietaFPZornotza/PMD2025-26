@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/liburuaSortu"
+        android:title="liburuaSortu" />
+    <item
+        android:id="@+id/liburuakIkusi"
+        android:title="liburuakIkusi" />
+    <item
+        android:id="@+id/saioaItxi"
+        android:title="saioaItxi" />
+    <item
+        android:id="@+id/Irten"
+        android:title="Irten" />
+</menu>

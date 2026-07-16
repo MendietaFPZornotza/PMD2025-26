@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">EkiTop</string>
+    <string name="norGara_Helbidea">📍 Helbidea\nKultur Plaza 1, 20001 Donostia</string>
+    <string name="norGara_Telefonoa">📞 Telefonoa\n687 923 624</string>
+    <string name="norGara_postaElektronikoa">✉️ Posta elektronikoa\nekitop26@gmail.com</string>
+    <string name="norGara_izenburua">Nor gara?</string>
+    <string name="norGara_testua">Ongi etorri gure kultur gunera! Gure zinema, antzoki eta kontzertu aretoak herriaren bihotzean kokatzen da, eta 1985ean zabaldu genuenetik kultura da guretzat erreferentzia izan gara.\n\nPelikula, antzezlan eta kontzertu hautatuak eskaintzen ditugu, herritarrei kalitate handiko kultur esperientzia bermatzeko helburuarekin.\n\nGure ekipoa zure bisita ahalik eta atseginena izan dadin lanean dabil, eta zure iradokizunak eta iritziak beti ongi etorriak dira.</string>
+    <string name="norGara_datuak">Harremanetarako datuak</string>
+    <string name="norGara_ordutegiaIzenburua">Ordutegiak</string>
+    <string name="norGara_ordutegia">Astelehenetik ostiralera: 16:00 - 23:00\nLarunbata: 12:00 - 00:00\nDomeka: 12:00 - 22:00</string>
+
+    <string name="details_izenburua">Oppenheimer</string>
+    <string name="details_summary">Drama · Sala 1 · 2026-01-15 - 20:00</string>
+    <string name="details_sinopsia">Sinopsia...</string>
+    <string name="details_prezioa">Prezioa: 8.5€</string>
+    <string name="details_aukeratu">Aukeratu eserlekua</string>
+    <string name="details_pantaila">Pantaila</string>
+    <string name="details_libre">Libre</string>
+    <string name="details_aukeratuta">Aukeratuta</string>
+    <string name="details_okupatuta">Okupatua</string>
+    <string name="details_eserlekua">Eserlekua: -</string>
+    <string name="details_azkenPrezioa">Prezioa: 0 x 8.5€ = 0€</string>
+    <string name="details_ordaindu">Jarraitu ordainketara</string>
+
+    <string name="listActivity_bilatu">Bilatu...</string>
+    <string name="listActivity_filtroak">Filtroak</string>
+
+    <string name="login_ongiEtorri">Ongi etorri</string>
+    <string name="login_mail">Posta elektronikoa</string>
+    <string name="login_pass">Pasahitza</string>
+    <string name="login_sartu">Sartu</string>
+    <string name="login_kontuaSortu">Kontua sortu</string>
+
+    <string name="profile_datuPertsonalak">Datu pertsonalak</string>
+    <string name="profile_editatu">Editatu</string>
+    <string name="profile_izena">Izena</string>
+    <string name="profile_gap">-</string>
+    <string name="profile_izenaHint">Izena</string>
+    <string name="profile_mail">Posta elektronikoa</string>
+    <string name="profile_mailHint">Emaila</string>
+    <string name="profile_passBerria">Pasahitz berria (aukerakoa)</string>
+    <string name="profile_passBerriaHint">Pasahitz berria</string>
+    <string name="profile_passErrepikatu">Errepikatu pasahitza</string>
+    <string name="profile_nireSarrerak">Nire sarrerak</string>
+    <string name="profile_sarrerarikEz">Ez duzu sarrerarik oraindik</string>
+    <string name="profile_kontuaEzabatu">Kontua ezabatu</string>
+    <string name="profile_kontuz">⚠️ KONTUZ! Kontua ezabatzean ezin izango zara berriro sartu. Zure sarrerak gordeko dira.</string>
+
+    <string name="purchase_laburpena">Erosketa laburpena</string>
+    <string name="purchase_mailKodea">Kodea bidaltzeko email-a</string>
+    <string name="purchase_mailHint">izena@dominioa.com</string>
+    <string name="purchase_erosi">Erosi</string>
+
+    <string name="signup_kontuaSortu">Kontua sortu</string>
+    <string name="signup_izenaHint">Izena</string>
+    <string name="signup_mailHint">Posta elektronikoa</string>
+    <string name="signup_passHint">Pasahitza</string>
+    <string name="purchase_errepikatuPass">Errepikatu pasahitza</string>
+    <string name="signup_sortuKontua">Sortu kontua</string>
+    <string name="signup_atzera">Atzera</string>
+
+    <string name="ticket_erosketaEginda">Erosketa eginda!</string>
+    <string name="ticket_sarreraPrest">Zure sarrera prest dago</string>
+    <string name="ticket_deskargaKodea">Deskarga kodea</string>
+    <string name="ticket_kodea">A7K2F9</string>
+    <string name="ticket_kopiatu">Kopiatu</string>
+    <string name="ticket_infoMail">Mezu elektroniko bat bidali dizugu zure sarrera deskargatzeko kodea daukana. Mesedez, begiratu zure posta elektronikoa.</string>
+    <string name="ticket_btnHasiera">Hasierara itzuli</string>
+    <string name="ticket_btnSarreral">Nire sarrerak ikusi</string>
+    <string name="ticket_infoGomendatu">Gomendagarria da ekitaldia 15 minutu lehenago heltzea.\nQR kodea beharko duzu sarrerako.</string>
+
+    <string name="dialog_sartuKodea">Sartu deskarga kodea</string>
+    <string name="dialog_kodeaHint">Kodea</string>
+    <string name="dialog_baieztatu">Baieztatu</string>
+
+    <string name="eventCard_izenburua">Oppenheimer</string>
+    <string name="eventCard_data">2026-01-15 · 20:00</string>
+    <string name="eventCard_prezioa">8.5€</string>
+
+    <string name="listCard_izenburua">Oppenheimer</string>
+    <string name="listCard_eszenatokia">Sala 1</string>
+    <string name="listCard_data">2026-01-15</string>
+    <string name="listCard_ordua">20:00</string>
+    <string name="listCard_prezioa">8.5€</string>
+
+    <string name="seat_aukeratuta">✓</string>
+
+    <string name="section_guztiakIkusi">Guztiak ikusi →</string>
+
+    <string name="menu_nireProfila">Nire profila</string>
+    <string name="menu_saioaItxi">Saioa itxi</string>
+    <string name="menu_menua">Menua</string>
+    <string name="menu_pelikulak">Pelikulak</string>
+    <string name="menu_antzerkiak">Antzerkiak</string>
+    <string name="menu_kontzertuak">Kontzertuak</string>
+    <string name="menu_guriBuruz">Guri buruz</string>
+</resources>

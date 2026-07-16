@@ -1,0 +1,33 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Menuaren layout-a -->
+    <item
+        android:id="@+id/menuKosmetikoBerria"
+        android:icon="@drawable/agregar"
+        android:title=""
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/menuKosmetikoZerrenda"
+        android:icon="@drawable/lista"
+        android:title=""
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/menuSaioaItxi"
+        android:icon="@drawable/cerrar_sesion"
+        android:title=""
+        android:visible="true"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuIrten"
+        android:icon="@drawable/irten"
+        android:title=""
+        app:showAsAction="always" />
+
+</menu>

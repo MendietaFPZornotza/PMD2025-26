@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título de la pantalla -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Produktu Berria"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_blue"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- EditText para el título del producto -->
+        <EditText
+            android:id="@+id/edit_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:hint="Produktuaren izenburua"
+            android:inputType="text"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Spinner para el tipo de producto -->
+        <Spinner
+            android:id="@+id/spinner_product_type"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/dark_blue"
+            android:layout_marginBottom="16dp" />
+
+        <!-- EditText para la talla del producto -->
+        <EditText
+            android:id="@+id/edit_product_size"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:hint="Talla (S, M, L... edo 38, 40, 42...)"
+            android:inputType="text"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:layout_marginBottom="16dp" />
+
+        <!-- TextView para el texto de "Jatorria:" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Jatorria:"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+        <!-- CheckBoxes para los orígenes -->
+        <CheckBox
+            android:id="@+id/checkbox_origin_spain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Espainia"
+            android:textSize="18sp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_origin_taiwan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taiwan"
+            android:textSize="18sp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_origin_england"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingalaterra"
+            android:textSize="18sp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginBottom="16dp" />
+
+        <!-- EditText para el precio del producto -->
+        <EditText
+            android:id="@+id/edit_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Prezioa (x.yy)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/dark_blue"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CheckBox para disponibilidad -->
+        <CheckBox
+            android:id="@+id/checkbox_availability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eskuragarri"
+            android:textSize="18sp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón para agregar el producto -->
+        <Button
+            android:id="@+id/button_add_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Gehitu Produktua"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

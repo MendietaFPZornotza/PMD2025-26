@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Fondo azul degradado -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#12308F"
+                android:endColor="#2E6BFF"
+                android:angle="270"/>
+        </shape>
+    </item>
+
+    <!-- Logo centrado -->
+    <item
+        android:gravity="center">
+        <bitmap
+            android:src="@drawable/ic_ticket"
+            android:gravity="center"/>
+    </item>
+
+</layer-list>

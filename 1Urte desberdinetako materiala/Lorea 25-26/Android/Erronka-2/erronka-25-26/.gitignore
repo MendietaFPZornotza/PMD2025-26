@@ -1,0 +1,39 @@
+# =========================
+# IntelliJ / IDEs
+# =========================
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# =========================
+# Java / Maven / Gradle
+# =========================
+**/target/
+**/build/
+**/.gradle
+# =========================
+# Node / Frontend
+# =========================
+**/node_modules/
+**/dist/
+**/.env
+
+# =========================
+# Logs y temporales
+# =========================
+*.log
+*.tmp
+
+# =========================
+# Sistema
+# =========================
+.DS_Store
+Thumbs.db
+
+# Gradle / IDE / build artifacts
+mahaigaineko_app/.gradle/
+mahaigaineko_app/out/
+**/out/
+**/.gradle/

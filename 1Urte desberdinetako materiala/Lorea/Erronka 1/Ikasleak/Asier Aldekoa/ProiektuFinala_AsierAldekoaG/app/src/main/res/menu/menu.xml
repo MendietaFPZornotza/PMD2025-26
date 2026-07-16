@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/altzariberria"
+        android:title="@string/altzari_berria" />
+    <item
+        android:id="@+id/saioaitxi"
+        android:title="@string/saioa_itxi" />
+    <item
+        android:id="@+id/irten"
+        android:title="@string/irten" />
+</menu>

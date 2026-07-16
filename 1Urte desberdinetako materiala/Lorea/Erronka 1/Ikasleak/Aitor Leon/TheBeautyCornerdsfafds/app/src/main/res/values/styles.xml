@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomNavigationIconSizeTheme" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconSize">30dp</item> <!-- Cambia este valor para ajustar el tamaño del ícono -->
+    </style>
+
+</resources>

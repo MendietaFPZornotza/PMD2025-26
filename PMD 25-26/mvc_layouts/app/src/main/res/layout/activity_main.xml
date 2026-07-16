@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <!-- ScrollView: pantaila txikietan eduki guztia ikusteko -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Eduki nagusiaren antolaketa bertikala -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- FrameLayout: irudia eta testua gainjarrita -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#BDBDBD">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_margin="8dp"
+                    android:text="Erabiltzaileak"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+            <!-- Izena sartzeko testu-kutxa -->
+            <EditText
+                android:id="@+id/etIzena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Izena"
+                android:minHeight="48dp"/>
+
+            <!-- Abizena sartzeko testu-kutxa -->
+            <EditText
+                android:id="@+id/etAbizena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Abizena"
+                android:minHeight="48dp"/>
+
+            <!-- Adina sartzeko testu-kutxa -->
+            <EditText
+                android:id="@+id/etAdina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Adina"
+                android:inputType="number"
+                android:minHeight="48dp"/>
+
+            <!-- Botoien antolaketa horizontala -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12dp">
+
+                <Button
+                    android:id="@+id/btnGehitu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GEHITU" />
+
+                <Button
+                    android:id="@+id/btnIkusi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IKUSI GUZTIAK"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+
+            <!-- Erabiltzailearen datuak erakusteko taula -->
+            <TableLayout
+                android:id="@+id/taulaErabiltzaileak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:stretchColumns="*">
+
+                <TableRow>
+                    <TextView android:text="Izena" android:textStyle="bold"/>
+                    <TextView android:text="Abizena" android:textStyle="bold"/>
+                    <TextView android:text="Adina" android:textStyle="bold"/>
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

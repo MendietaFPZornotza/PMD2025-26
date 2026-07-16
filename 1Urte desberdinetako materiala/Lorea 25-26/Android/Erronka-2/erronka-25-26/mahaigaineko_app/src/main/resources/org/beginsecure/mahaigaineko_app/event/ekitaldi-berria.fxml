@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane stylesheets="@../../../../styles/ekitaldi-berria.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.beginsecure.mahaigaineko_app.controller.events.EkitaldiBerriaController">
+
+    <!-- CENTRADOR -->
+    <StackPane AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+        <!-- PANEL -->
+        <VBox styleClass="form-card">
+
+            <Label styleClass="header-title" text="Ekitaldi berri bat sortu" />
+
+            <TextField fx:id="titleField" promptText="Izenburua" />
+
+            <ComboBox fx:id="typeField" promptText="Mota" styleClass="type">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="PELIKULA" />
+                        <String fx:value="ANTZERKIA" />
+                        <String fx:value="KONTZERTUA" />
+                    </FXCollections>
+                </items>
+            </ComboBox>
+
+            <TextField fx:id="genreField" promptText="Genero" />
+
+            <!-- HASIERA -->
+            <Label text="Hasiera" />
+            <HBox spacing="10">
+                <DatePicker fx:id="startDatePicker" />
+
+                <ComboBox fx:id="startHourCombo" prefWidth="80" promptText="HH" />
+                <Label text=":" />
+                <ComboBox fx:id="startMinuteCombo" prefWidth="80" promptText="MM" />
+            </HBox>
+
+            <!-- AMAIERA -->
+            <Label text="Amaiera" />
+            <HBox spacing="10">
+                <DatePicker fx:id="endDatePicker" />
+
+                <ComboBox fx:id="endHourCombo" prefWidth="80" promptText="HH" />
+                <Label text=":" />
+                <ComboBox fx:id="endMinuteCombo" prefWidth="80" promptText="MM" />
+            </HBox>
+            <TextArea fx:id="synopsisArea" prefRowCount="4" promptText="Sinopsia" />
+            <ComboBox fx:id="eszenatokiCombo" promptText="Eszenatokia" styleClass="scenario" />
+            <TextField fx:id="priceArea" promptText="Sarrera €" />
+
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Button fx:id="btnPickImage"
+                        onAction="#chooseImage"
+                        text="Aukeratu irudia"/>
+                <Label fx:id="imageLabel"
+                       text="Irudirik ez"
+                       wrapText="true"/>
+            </HBox>
+
+            <HBox alignment="CENTER" spacing="20">
+                <Button fx:id="btnSave" onAction="#saveEvent" styleClass="btn-add" text="Guardar" />
+                <Button fx:id="btnCancel" onAction="#cancelEvent" styleClass="btn-cancel" text="Cancelar" />
+            </HBox>
+
+        </VBox>
+    </StackPane>
+</AnchorPane>

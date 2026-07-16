@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Bideojokoaren izena -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bideojokoaren Izenburua"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Generoa -->
+        <TextView
+            android:id="@+id/tvGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generoa: Ekintza"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Plataformak -->
+        <TextView
+            android:id="@+id/tvPlatforms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plataformak: PS5, Xbox"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Prezioa -->
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prezioa: €59.99"
+            android:textSize="16sp"
+            android:textColor="#FF5722"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Eskuragarritasuna -->
+        <TextView
+            android:id="@+id/tvAvailability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eskuragarritasuna: Stockean"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Deskribapena -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deskribapena: Abentura ahaztezina dakarren ekintza-joko zirraragarria."
+            android:textSize="14sp"
+            android:textColor="#777777" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

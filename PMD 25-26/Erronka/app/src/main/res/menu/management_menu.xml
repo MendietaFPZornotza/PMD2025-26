@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_books"
+        android:title="Books"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/menu_book_new" android:title="New" />
+            <item android:id="@+id/menu_book_delete" android:title="Delete" />
+            <item android:id="@+id/menu_book_update" android:title="Update" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/menu_authors"
+        android:title="Writers"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/menu_writer_new" android:title="New" />
+            <item android:id="@+id/menu_writer_delete" android:title="Delete" />
+            <item android:id="@+id/menu_writer_update" android:title="Update" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/menu_genres"
+        android:title="Genres"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/menu_genre_new" android:title="New" />
+            <item android:id="@+id/menu_genre_delete" android:title="Delete" />
+            <item android:id="@+id/menu_genre_update" android:title="Update" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/menu_switch_selection"
+        android:title="Switch to Selection"
+        app:showAsAction="never" />
+    <item android:title="Fitxagia Sortu" />
+</menu>

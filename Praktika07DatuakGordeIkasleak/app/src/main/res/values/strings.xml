@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Praktika07-DatuakGorde-Ikasleak</string>
+    <string name="agregar_datos">Datuak Gehitu</string>
+    <string name="leer_datos_del_archivo">Irakurri Datuak Fitxategitik</string>
+    <string name="nombre">Izena</string>
+    <string name="lugar">Lurraldea</string>
+    <string name="edad">Adina</string>
+    <string name="leer_del_archivo">Fitxategitik Irakurri</string>
+    <string name="mostrar_datos">Datuak erakutsi</string>
+    <string name="guardar_en_lista">Zerrendan Gorde</string>
+    <string name="guardar_al_archivo">Fitxategian Gorde</string>
+    <string name="lista_de_nombres">Izenen zerrenda</string>
+</resources>

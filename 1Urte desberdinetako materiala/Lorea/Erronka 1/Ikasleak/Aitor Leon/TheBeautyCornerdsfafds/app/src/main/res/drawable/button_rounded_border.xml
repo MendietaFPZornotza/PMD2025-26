@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Login pantailan erabiltzen den botoi estiloa -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="16dp"/>
+    <solid android:color = "@color/larrosa_argia"/>
+    <stroke
+        android:width="2dp"
+        android:color="@color/larrosa_argia"
+    />
+</selector>

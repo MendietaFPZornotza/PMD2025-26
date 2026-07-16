@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/producto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!-- Contenedor para los textos -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/izena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Izena"
+            android:textColor="#4E4E50"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/mota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mota"
+            android:textColor="#9E9E9E"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/prezioa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prezioa"
+            android:textColor="#388E3C"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/eskuragarri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eskuragarritasuna"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Imagen a la derecha -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

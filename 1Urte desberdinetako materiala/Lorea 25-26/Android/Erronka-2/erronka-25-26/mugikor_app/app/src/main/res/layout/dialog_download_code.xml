@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- DIALOGOA: NireProfilaActivity-ko “deskarga kodea” pop-up-a (dialog_download_code.xml) -->
+
+    <!-- TITULUA: erabiltzaileari eskatzen zaion ekintza -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_sartuKodea"
+        android:textStyle="bold"
+        android:textColor="#1730B8"
+        android:textSize="16sp"/>
+
+    <!-- INPUT: kodea (TextInputLayout + EditText) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/dialog_kodeaHint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- BOTOIA: baieztatu (kodea minimoa bete arte desaktibatuta) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConfirmDownload"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/dialog_baieztatu"
+        android:enabled="false"
+        android:textStyle="bold"
+        app:cornerRadius="14dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#1730B8"/>
+</LinearLayout>

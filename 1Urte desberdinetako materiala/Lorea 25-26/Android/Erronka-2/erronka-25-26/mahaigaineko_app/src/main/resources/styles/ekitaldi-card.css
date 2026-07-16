@@ -1,0 +1,146 @@
+.card-root {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-border-radius: 16;
+    -fx-border-color: #E9EDF5;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 16, 0.25, 0, 6);
+}
+
+.card-header { -fx-background-radius: 16 16 0 0; }
+.card-body   { -fx-background-color: white; -fx-background-radius: 0 0 16 16; }
+
+/* HEADER TEXT */
+.header-title {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: 800;
+}
+
+.header-desc {
+    -fx-text-fill: rgba(255,255,255,0.90);
+    -fx-font-size: 12.5px;
+    -fx-font-weight: 600;
+}
+
+.header-icon { -fx-fill: white; -fx-scale-x: 1.05; -fx-scale-y: 1.05; }
+
+/* ESTADO */
+.header-pill {
+    -fx-background-color: rgba(255,255,255,0.18);
+    -fx-text-fill: white;
+    -fx-font-size: 11.5px;
+    -fx-font-weight: 800;
+    -fx-padding: 3 10;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+}
+
+/* ACTIONS */
+.header-action {
+    -fx-fill: rgba(255,255,255,0.9);
+    -fx-cursor: hand;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.header-action:hover {
+    -fx-fill: white;
+    -fx-scale-x: 1.08;
+    -fx-scale-y: 1.08;
+}
+
+/* ROWS */
+.row { -fx-padding: 2 0 2 0; }
+
+.row-icon {
+    -fx-fill: #9AA6B2;
+    -fx-scale-x: 1.5;
+    -fx-scale-y:1.5 }
+
+.row-text {
+    -fx-text-fill: #334155;
+    -fx-font-size: 12.5px;
+    -fx-font-weight: 700;
+}
+
+.row-price {
+    -fx-text-fill: #111827;
+}
+
+/* TICKETS */
+.tickets-box {
+    -fx-padding: 6 0 2 0;
+}
+
+.tickets-title {
+    -fx-text-fill: #111827;
+    -fx-font-size: 12.5px;
+    -fx-font-weight: 800;
+}
+
+.tickets-progress {
+    -fx-accent: #4c51bf;
+    -fx-background-radius: 999px;
+    -fx-border-radius: 999px;
+    -fx-pref-height: 10px;
+}
+
+/* FOOTER */
+.footer { -fx-padding: 6 0 0 0; }
+
+.footer-muted {
+    -fx-font-size: 12px;
+    -fx-text-fill: #64748B;
+    -fx-font-weight: 700;
+}
+
+.footer-strong {
+    -fx-font-size: 12px;
+    -fx-text-fill: #4c51bf;
+    -fx-font-weight: 900;
+}
+
+.footer-link {
+    -fx-font-size: 12px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #4c51bf;
+    -fx-underline: false;
+}
+.footer-link:hover { -fx-underline: true; }
+
+/* HEADER COLORS (elige una o alterna en controller como eszenatoki) */
+.header-purple {
+    -fx-background-color: linear-gradient(to right, #4c51bf, #6d6cff);
+}
+
+.header-blue {
+    -fx-background-color: linear-gradient(to right, #2F6BFF, #2AA7FF);
+}
+
+.header-green {
+    -fx-background-color: linear-gradient(to right, #10B981, #34D399);
+}
+
+.header-orange {
+    -fx-background-color: linear-gradient(to right, #F97316, #FB923C);
+}
+
+.header-teal {
+    -fx-background-color: linear-gradient(to right, #06B6D4, #22D3EE);
+}
+
+/* EVENT IMAGE */
+.event-image {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(255,255,255,0.55);
+    -fx-border-width: 1.2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 10, 0.20, 0, 2);
+    -fx-opacity: 0.98;
+}
+
+/* Si la imagen es transparente o muy clara, este overlay ayuda un pelín visualmente */
+.event-image:hover {
+    -fx-opacity: 1;
+}

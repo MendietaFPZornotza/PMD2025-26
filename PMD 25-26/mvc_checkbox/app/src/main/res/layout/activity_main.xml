@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aukeratu jaki gustukoenak:"
+        android:textSize="20sp"
+        android:paddingBottom="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Pizza - 10€"/>
+
+
+    <CheckBox
+        android:id="@+id/checkSushi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Sushi - 12€"/>
+
+    <CheckBox
+        android:id="@+id/checkPasta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Pasta - 8€"/>
+
+    <CheckBox
+        android:id="@+id/checkEnsalada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="Ensalada - 6€"/>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kalkulatu guztira"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ez da ezer hautatu oraindik."
+        android:paddingTop="16dp"
+        android:textSize="16sp"/>
+</LinearLayout>

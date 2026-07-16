@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/meErrogehi"
+        android:title="Erropa berria gehitu" />
+    <item
+        android:id="@+id/meErroZerre"
+        android:title="Erropen Zerrenda" />
+    <item
+        android:id="@+id/meSaItxi"
+        android:title="Saioa itxi" />
+    <item
+        android:id="@+id/meIr"
+        android:title="Irten" />
+</menu>

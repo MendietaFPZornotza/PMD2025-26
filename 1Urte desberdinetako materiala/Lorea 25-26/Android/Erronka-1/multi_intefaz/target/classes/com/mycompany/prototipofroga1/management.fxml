@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="467.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.prototipofroga1.ManagementController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="34.0" prefWidth="734.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="BOOKS">
+            <items>
+                  <MenuItem fx:id="mnuNewBook" mnemonicParsing="false" text="New" />
+                  <MenuItem fx:id="mnuBookDelete" mnemonicParsing="false" text="Delete" />
+                  <MenuItem fx:id="mnuBookUpdate" mnemonicParsing="false" text="Update" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="WRITERS">
+            <items>
+              <MenuItem fx:id="mnuWriterNew" mnemonicParsing="false" text="New" />
+                  <MenuItem fx:id="mnuWriterDelete" mnemonicParsing="false" text="Delete" />
+                  <MenuItem fx:id="mnuWriterUpdate" mnemonicParsing="false" text="Update" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="LITERARY GENRES">
+            <items>
+              <MenuItem fx:id="mnuGenresNew" mnemonicParsing="false" text="New" />
+                  <MenuItem fx:id="mnuGenresDelete" mnemonicParsing="false" text="Delete" />
+                  <MenuItem fx:id="mnuGenresUpdate" mnemonicParsing="false" text="Update" />
+            </items>
+          </Menu>
+          <Menu fx:id="mnuSwitchToSelection" mnemonicParsing="false" onAction="#backToSelection" text="SWITCH TO SELECTION">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Back to Selection" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="lbloption" layoutX="225.0" layoutY="36.0" prefHeight="32.0" prefWidth="152.0" text="option selected">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblId" layoutX="55.0" layoutY="114.0" prefHeight="32.0" prefWidth="96.0" text="id">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="151.0" layoutY="117.0" prefHeight="26.0" prefWidth="222.0" />
+      <Label fx:id="lblTitulua" layoutX="46.0" layoutY="152.0" prefHeight="32.0" prefWidth="96.0" text="Titulua">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTitulua" layoutX="151.0" layoutY="155.0" prefHeight="26.0" prefWidth="222.0" />
+      <Label fx:id="lblAutor" layoutX="46.0" layoutY="184.0" prefHeight="32.0" prefWidth="96.0" text="Autorea">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAutorea" layoutX="388.0" layoutY="222.0" prefHeight="26.0" prefWidth="165.0" />
+      <ComboBox fx:id="cmbAutor" layoutX="151.0" layoutY="187.0" prefHeight="26.0" prefWidth="222.0" />
+      <Button fx:id="btnAutoreBerria" layoutX="388.0" layoutY="187.0" mnemonicParsing="false" onAction="#ikusiAutoreBerria" prefHeight="26.0" prefWidth="166.0" text="Autore Berria" />
+      <Label fx:id="lblGeneros" layoutX="46.0" layoutY="220.0" prefHeight="32.0" prefWidth="96.0" text="Generoak">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstGenre" layoutX="157.0" layoutY="236.0" prefHeight="200.0" prefWidth="210.0" />
+      <Button fx:id="btnGorde" layoutX="394.0" layoutY="401.0" mnemonicParsing="false" onAction="#saveBook" prefHeight="42.0" prefWidth="166.0" text="Gorde">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnOnartuAutorea" layoutX="388.0" layoutY="259.0" mnemonicParsing="false" onAction="#btnOnartuAutorea" prefHeight="26.0" prefWidth="166.0" text="Onartu Autorea" />
+   </children>
+</AnchorPane>

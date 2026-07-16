@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="32dp"
+    android:background="@color/nude_larrosa"
+
+    >
+
+
+    <!-- Pantailaren tituloa -->
+    <TextView
+        android:id="@+id/txtPantailaTitulua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/prodGehitu"
+        android:textColor="@color/beltza"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Produktuaren izena -->
+    <EditText
+        android:id="@+id/txtProdIzena"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/prodIzena"
+        android:inputType="text"
+        android:textColor="@color/beltza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPantailaTitulua" />
+
+    <!-- Mota Spinner-a -->
+    <Spinner
+        android:id="@+id/spinnerProdMota"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtProdIzena"
+        android:spinnerMode="dropdown"/>
+
+    <!-- Marka -->
+    <EditText
+        android:id="@+id/txtProdMarka"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/prodMarka"
+        android:inputType="text"
+        android:textColor="@color/beltza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerProdMota" />
+
+    <!-- Jatorriaren aukerak bere etiketarekin-->
+    <LinearLayout
+        android:id="@+id/layoutProdJatorria"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtProdMarka">
+
+        <TextView
+            android:id="@+id/labelJatorria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Aukeratu produktuaren jatorria"
+            android:textSize="16sp"
+            android:textColor="@color/beltza"
+            android:gravity="center" />
+
+        <CheckBox
+            android:id="@+id/checkMongolia"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Mongolia" />
+
+        <CheckBox
+            android:id="@+id/checkNigeria"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Nigeria" />
+
+        <CheckBox
+            android:id="@+id/checkAmorebieta"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Amorebieta" />
+    </LinearLayout>
+
+
+    <!-- Prezioa -->
+    <EditText
+        android:id="@+id/txtProdPrezioa"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/prodPrezioa"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutProdJatorria" />
+
+    <!-- Eskuragarritasuna checkbox-a -->
+    <CheckBox
+        android:id="@+id/checkboxProdEskuragarritasuna"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/prodEskuragarritasuna"
+        android:textColor="@color/beltza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtProdPrezioa" />
+
+    <!-- Botón para guardar el producto -->
+    <Button
+        android:id="@+id/buttonGorde"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded_border_black"
+        android:text="@string/prodGehitu"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkboxProdEskuragarritasuna" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
